@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="../dist/output.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body class="bg-orange-100 flex h-screen justify-center items-center content-center">
+  <section class="w-10/12 max-w-[790px] bg-white rounded-md">
+    <div class="flex md:flex-row flex-col">
+      <div class="sm:w-1/2 w-full">
+        <picture>
+          <source media="(min-width:768px)" srcset="./images/image-product-desktop.jpg">
+          <source media="(max-width:767px)" srcset="./images/image-product-mobile.jpg">
+          <img class="h-full flex sm:rounded-l-lg rounded-t-lg sm:rounded-tr-none" src="./images/image-product-desktop.jpg" alt="perfume" style="width:auto;">
+        </picture>
+      </div>
+      <div class="sm:w-1/2 w-full flex-col items-center flex justify-center">
+        <div class="mt-4 w-11/12">
+          <span class="mt-7 spacing text-lg tracking-[5px]">PERFUME</span>
+          <h1 class="mt-7 text-4xl font-extrabold w-full sm:w-3/4">Gabrielle Essence Eau De Parfum</h1>
+          <p class="mt-7 text-lg tracking-wide">A floral, solar and voluptuous interpretation composed by Olivier Polge,
+            Perfumer-Creator for the House of CHANEL.
+          </p>
+          <h2 class="mt-7 text-4xl text-green-800 font-black flex flex-row items-center">$149.99<span class="ml-4 text-base font-normal line-through">$169.99</span></h2>
+          <button class="mt-7 mb-4  bg-green-800 text-white h-12 w-full rounded-lg">Add to Cart</button>
+
+        </div>
+      </div>
+    </div>  
+
+
+
+
+
+  </section>
+
+
+
+</body>
+
+</html>

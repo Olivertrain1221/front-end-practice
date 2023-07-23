@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="../dist/output.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Using tailwind Grid</title>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+
+<body class="grid place-content-center min-h-screen">
+    <!-- Define the grid container and then add in the break points. -->
+    <div class="grid gap-4 p-4 max-w-5xl xs:grid-cols-2">
+        <!-- I am using a screen query of xs to then target the collumn and make it occupy on a small screen the first two collumns -->
+        <h1 class="text-4xl font-extrabold xs:col-span-2">Grid Layout with Tailwind css.</h1>
+        <p class="xs:col-span-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor eveniet voluptatem voluptates neque voluptas nihil? A excepturi est dolores! Unde velit officia error labore quos ipsum repudiandae? Mollitia, itaque architecto.</p>
+        <div class="h-16 bg-lime-500"></div>
+        <div class="h-16 bg-fuchsia-600"></div>
+        <div class="h-16 bg-lime-500"></div>
+        <div class="h-16 bg-fuchsia-600"></div>
+        <div class="h-16 bg-lime-500"></div>
+        <div class="h-16 bg-fuchsia-600"></div>
+        <div class="h-16 bg-lime-500"></div>
+        <div class="h-16 bg-fuchsia-600"></div>
+    </div>
+</body>
+
+</html>
