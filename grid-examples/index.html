@@ -13,18 +13,22 @@
 
 <body class="grid place-content-center min-h-screen">
     <!-- Define the grid container and then add in the break points. -->
-    <div class="grid gap-4 p-4 max-w-5xl xs:grid-cols-2">
+    <div class="grid gap-4 p-4 max-w-5xl xs:grid-cols-2 md:grid-cols-4">
         <!-- I am using a screen query of xs to then target the collumn and make it occupy on a small screen the first two collumns -->
-        <h1 class="text-4xl font-extrabold xs:col-span-2">Grid Layout with Tailwind css.</h1>
-        <p class="xs:col-span-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor eveniet voluptatem voluptates neque voluptas nihil? A excepturi est dolores! Unde velit officia error labore quos ipsum repudiandae? Mollitia, itaque architecto.</p>
-        <div class="h-16 bg-lime-500"></div>
-        <div class="h-16 bg-fuchsia-600"></div>
-        <div class="h-16 bg-lime-500"></div>
-        <div class="h-16 bg-fuchsia-600"></div>
-        <div class="h-16 bg-lime-500"></div>
-        <div class="h-16 bg-fuchsia-600"></div>
-        <div class="h-16 bg-lime-500"></div>
-        <div class="h-16 bg-fuchsia-600"></div>
+        <h1 class="text-4xl font-extrabold xs:grid xs:grid-cols-2 xs:col-span-2 md:col-span-3 md:text-5xl grid">
+            <span class=" md:col-span-3">
+                Layout with Tailwind css.
+            </span>
+        </h1>
+        <p class="xs:row-start-2 xs:col-start-2 xs:self-center md:row-start-2 md:col-start-1 md:col-span-2 pr-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor eveniet voluptatem voluptates neque voluptas nihil? A excepturi est dolores! Unde velit officia error labore quos ipsum repudiandae? Mollitia, itaque architecto.</p>
+        <div class="h-16 bg-lime-500 xs:h-auto xs:square"></div>
+        <div class="h-16 bg-fuchsia-600 xs:h-auto xs:square"></div>
+        <div class="h-16 bg-lime-500 xs:h-auto xs:square"></div>
+        <div class="h-16 bg-fuchsia-600 xs:h-auto xs:square"></div>
+        <div class="h-16 bg-lime-500 xs:h-auto xs:square"></div>
+        <div class="h-16 bg-fuchsia-600 xs:h-auto xs:square"></div>
+        <div class="h-16 bg-lime-500 xs:h-auto xs:square"></div>
+        <div class="h-16 bg-fuchsia-600 xs:h-auto xs:square"></div>
     </div>
 </body>
 

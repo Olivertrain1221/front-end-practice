@@ -1805,6 +1805,21 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-yellow-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 240 138 / var(--tw-bg-opacity));
+}
+
+.bg-red-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(185 28 28 / var(--tw-bg-opacity));
+}
+
+.bg-yellow-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 204 21 / var(--tw-bg-opacity));
+}
+
 .decoration-slice {
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
@@ -1917,6 +1932,10 @@ video {
 
 .p-4 {
   padding: 1rem;
+}
+
+.pr-12 {
+  padding-right: 3rem;
 }
 
 .text-left {
@@ -2418,6 +2437,10 @@ video {
   content: var(--tw-content);
 }
 
+.square {
+  aspect-ratio: 1 / 1;
+}
+
 @media (min-width: 768px) {
   .sm\:container {
     width: 100%;
@@ -2481,16 +2504,32 @@ video {
     grid-column: span 2 / span 2;
   }
 
+  .xs\:col-start-2 {
+    grid-column-start: 2;
+  }
+
+  .xs\:row-start-2 {
+    grid-row-start: 2;
+  }
+
+  .xs\:grid {
+    display: grid;
+  }
+
+  .xs\:h-auto {
+    height: auto;
+  }
+
   .xs\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .xs\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+  .xs\:self-center {
+    align-self: center;
   }
 
-  .xs\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+  .xs\:square {
+    aspect-ratio: 1 / 1;
   }
 }
 
@@ -2518,8 +2557,49 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .md\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+
+  .md\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
+  .md\:col-span-1 {
+    grid-column: span 1 / span 1;
+  }
+
+  .md\:col-start-2 {
+    grid-column-start: 2;
+  }
+
+  .md\:col-start-1 {
+    grid-column-start: 1;
+  }
+
+  .md\:row-start-1 {
+    grid-row-start: 1;
+  }
+
+  .md\:row-start-3 {
+    grid-row-start: 3;
+  }
+
+  .md\:row-start-2 {
+    grid-row-start: 2;
+  }
+
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 }
 
